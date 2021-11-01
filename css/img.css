@@ -1,0 +1,48 @@
+<style>
+.gaojianlaji img{
+width:500px;
+height:400px;
+display:flex;
+align-items:center;
+justify-content:center;
+   /*为了效果明显，可以将如下边框打开，看一下效果*/
+   /* border:1px solid black; */
+}
+ 
+.gaojianlaji img{
+ width:100%;
+ height:auto;
+}
+ 
+</style>
+
+.gaojianlaji img{width:100%;height:auto;width:auto;
+height:100%;display:flex;align-items:center; justify-content:center;
+width:auto;height:auto;max-width:100%;max-height:100%;
+}
+input::-webkit-input-placeholder { color:rgba(255,255,255,0.6); }
+input::-moz-input-placeholder { color:rgba(255,255,255,0.6); }
+input::-ms-input-placeholder { color:rgba(255,255,255,0.6); }
+
+.template { display:none }
+* { 
+	margin:0;
+	padding:0; 
+	list-style:none; 
+}
+/* 顶部栏 */
+.header { width:38rem;height:4rem;background:linear-gradient(90deg,#1A2E4A 0,#409890 100%); }
+.header.one { height:2rem }
+
+/* 列表 */
+.list .title { height:1rem;line-height:1rem;font-weight:bold;text-indent:0.6rem;padding-top:0.6rem;font-size:0.6rem }
+.list .items { padding-top:0.4rem;padding-left:0.4rem }
+.list .items a { display:block;float:left;width:4.6rem;height:7.9rem;margin-top:0.2rem;margin-right:0.2rem;border-radius:0.1rem;overflow:hidden  }
+.list .items a i { display:block;position:relative;width:4.6rem;height:6.2rem;background:#EEE no-repeat center;background-size:4.6rem 6.2rem }
+.list .items a i b { display:block;position:absolute;height:1rem;line-height:1rem;bottom:0;right:0;text-align:right;padding-right:0.3rem;color:#FFF;text-shadow:0 0 4px rgba(0,0,0,0.7);font-style:normal;font-weight:bold;font-size:0.45rem }
+.list .items a span { display:block;line-height:0.7rem;font-size:0.6rem;color:#333;margin-top:0.3rem }
+.list .more { height:1.4rem;text-align:center;margin-top:1rem }
+.list .more a { display:inline-block;width:6.8rem;height:0.7rem;line-height:0.7rem;padding:0.35rem 0;background:#F5F7FA;text-align:center;border-radius:0.1rem;color:#333;font-size:0.5rem }
+.list .more a img { width:0.6rem;height:0.6rem;position:relative;top:0.1rem;margin-right:0.2rem }
+.list .more a:first-child { margin-right:0.4rem }
+.list .more.one a { width:13.6rem;margin-top:0.6rem;margin-right:0 }

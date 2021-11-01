@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<title>搜索结果</title>
+<link rel="stylesheet" type="text/css" href="../css/new_file.css">
+<link rel="stylesheet" type="text/css" href="../css/jquery.mobile.min.css">
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/commonxd.css">
+<link rel="stylesheet" type="text/css" href="../css/search.css">
+</head>
+
+<body class="body">
+
+<div class="header">
+		<a class="logo" href="../index.html"><img src="../images/logo.png" /></a>
+	<ol style="display: block;">
+	<span class="layui-layer-setwin">
+	        <div id="search-area" class="layui-layer-content"><form onsubmit="return searchSubmit()">
+	<div id="search-area">
+	    <div class="search-group"> 
+	       <input type="text" name="wd" id="search-DO" placeholder="搜索" autofocus="" required="">      
+	  <button class="" type="submit">搜 索</button>  
+	  </div>    <div class="radio-group" id="music-source">   
+    <label><input type="radio" name="searchDo" value="ITV"> ITV</label>	
+	</span>
+	 </div></div></form></div>
+	 </ol>
+
+<div class="clear" style="height:2.5rem"></div>
+
+<div class="loading" id="loadBox">
+	<span class="s-loading"><i class="first"></i><i class="second"></i><i class="third"></i></span>
+</div>
+
+<div id="dataBox" style="display:none">
+
+	<div class="keywords" id="keywordItem"><b>“{{keyword}}”</b> 的搜索结果：</div>
+
+	<div class="list">
+
+		<div class="no-data" id="noDataBox" style="display:none;margin-top:1rem;background:none">没有找到相关影片，请尝试其他关键词！</div>
+
+		<div class="items" id="listList">
+			<div class="template">
+				<a href="{{href}}" data-id="{{id}}">
+					<i style="background-image:url({{pic}})"><b>{{hint}}</b></i>
+					<span>{{title}}</span>
+				</a>
+			</div>
+			<span class="clear"></span>
+		</div>
+
+		<div class="more one" style="display:none">
+			<a id="loadMore"><img src="../images/more.png" />加载更多</a>
+			<span class="s-loading" id="loading"><i class="first"></i><i class="second"></i><i class="third"></i></span>
+		</div>
+	</div>
+
+
+	<div class="clear" style="height:3rem"></div>
+
+	<div class="copyright">
+		<p>本站内容均来自于互联网资源实时抓取</p>
+		<p>本源码仅用做学习交流</p>
+	</div>
+</div>
+<div class="tabbar visible-xs">
+		<a href="../ITV/index.html" class="item ">
+        <i class="icon iconfont icon-shouye"></i>
+        <p class="text">首页</p>
+    </a>
+	<a href="list/dianying.html" class="item hongbao">
+        <i class="icon iconfont icon-caidanicondianyinghui"></i>
+        <p class="text">影片</p>
+    </a><a href="list/dianshi.html" class="item hongbao">
+        <i class="icon iconfont icon-tv_icon"></i>
+        <p class="text">电视</p>
+    </a><a href="list/dongman.html" class="item hongbao">
+        <i class="icon iconfont icon-liebiaodaohang_dongman"></i>
+        <p class="text">动漫</p>
+    </a><a href="list/zongyi.html" class="item hongbao">
+        <i class="icon iconfont icon-jiemu"></i>
+        <p class="text">综艺</p>
+    </a><a href="../Musics" class="item hongbao">
+        <i class="icon iconfont icon-jiemuu"></i>
+        <p class="text">音乐</p>
+    </a>    
+	</div>
+<a class="scroll-to-top" id="scrollToTop"></a>
+
+<script src="https://cdn.wxurl.cn/jquery/2.5.1/jquery.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/functions.js"></script>
+</body>
+</html>

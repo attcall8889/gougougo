@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://utao520.22web.org/index.php -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<title>搜索结果</title>
+
+
+<link rel="stylesheet" type="text/css" href="../css/commonxd.css">
+<link rel="stylesheet" type="text/css" href="../css/search.css">
+<!-- fonts -->
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<!-- jquery -->
+<script src="../js/push.js"></script>
+<script src="../js/jquery.min.js"></script>
+<!-- bootsrtap -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!-- 系统 -->
+<link href="../css/base.css" rel="stylesheet">
+<script src="../js/zh-cn.js"></script>
+<!--语言包 -->
+<script src="../js/base.js" data-id="daicuo" data-file="/index.php" data-root="/" data-view="apps/xiao/theme/default/" data-module="xiao" data-controll="index" data-action="index" data-userid="0" data-pageindex="1"></script>
+<!-- 主题 -->
+<link href="../css/theme.css" rel="stylesheet">
+<script src="../js/theme.js"></script>
+<style type="text/css">
+	@media (max-width:768px) {
+		.h-slide {
+		    height: 15px;
+		}
+	}
+</style>
+
+		<title>VIDEOS-首页</title>
+	</head>
+	
+	<body>
+<!-- 引入头部 -->
+		<header role="header">
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="http://utao520.22web.org/">VIDEOS</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#xiaonav" aria-controls="xiaonav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+
+			</button>
+
+	<ol style="display: block;">
+
+	<span class="layui-layer-setwin">
+	        <div id="search-area" class="layui-layer-content"><form onsubmit="return searchSubmit()">
+	<div id="search-area">
+	    <div class="search-group"> 
+	       <input type="text" name="wd" id="search-DO" placeholder="搜索" autofocus="" required="">      
+	  <button class="" type="submit">搜 索</button>  
+	  </div>    <div class="radio-group" id="music-source">   
+    <label><input type="radio" name="searchDo" value="ITV"> ITV</label>	
+	</span>
+	 </div></div></form></div>
+	 </ol>
+
+
+<div class="clear" style="height:0.5rem"></div>
+
+<div class="loading" id="loadBox">
+	<span class="s-loading"><i class="first"></i><i class="second"></i><i class="third"></i></span>
+</div>
+
+<div id="dataBox" style="display:none">
+
+	<div class="keywords" id="keywordItem"><b>“{{keyword}}”</b> 的搜索结果：</div>
+
+	<div class="list">
+
+		<div class="no-data" id="noDataBox" style="display:none;margin-top:1rem;background:none">没有找到相关影片，请尝试其他关键词！</div>
+
+		<div class="items" id="listList">
+			<div class="template">
+				<a href="{{href}}" data-id="{{id}}">
+					<i style="background-image:url({{pic}})"><b>{{hint}}</b></i>
+					<span>{{title}}</span>
+				</a>
+			</div>
+			<span class="clear"></span>
+		</div>
+
+		<div class="more one" style="display:none">
+			<a id="loadMore"><img src="../images/more.png" />加载更多</a>
+			<span class="s-loading" id="loading"><i class="first"></i><i class="second"></i><i class="third"></i></span>
+		</div>
+	</div>
+
+
+
+<div class="tabbar visible-xs">
+		<a href="../index.html" class="item ">
+        <i class="icon iconfont icon-shouye"></i>
+        <p class="text">首页</p>
+    </a>
+	<a href="list/dianying.html" class="item hongbao">
+        <i class="icon iconfont icon-caidanicondianyinghui"></i>
+        <p class="text">影片</p>
+    </a><a href="list/dianshi.html" class="item hongbao">
+        <i class="icon iconfont icon-tv_icon"></i>
+        <p class="text">电视</p>
+    </a><a href="list/dongman.html" class="item hongbao">
+        <i class="icon iconfont icon-liebiaodaohang_dongman"></i>
+        <p class="text">动漫</p>
+    </a><a href="list/zongyi.html" class="item hongbao">
+        <i class="icon iconfont icon-jiemu"></i>
+        <p class="text">综艺</p>
+    </a><a href="../Musics" class="item hongbao">
+        <i class="icon iconfont icon-jiemuu"></i>
+        <p class="text">音乐</p>
+    </a>    
+	</div>
+
+
+<a class="scroll-to-top" id="scrollToTop"></a>
+<script src="../js/common.js"></script>
+<script src="../js/search.js"></script>
+<script src="../js/functions.js"></script>
+
+
+	
+</body>
+</html>

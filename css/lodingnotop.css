@@ -1,0 +1,412 @@
+@charset "utf-8";
+
+
+
+.bar{
+	color: gold;
+	font-size:100%;
+	letter-spacing: 0;
+	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+}
+.bar2{
+	color: deeppink;
+	font-size:100%;
+	letter-spacing: 0;
+	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135
+}
+
+.bar {
+  width: 100vw;
+  height: .25vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 16vw;
+  bottom: 0;
+  margin: auto;
+}
+
+
+
+.bar2 {
+  width: 100vw;
+  height: .25vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -16vw;
+  bottom: 0;
+  margin: auto;
+}
+
+/*婊″ぉ鏄�*/
+.wall{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:-9999;
+    animation: bgscroll 40s infinite linear;
+    -webkit-animation: bgscroll 40s infinite linear;
+}
+div#midground{
+    background: url("https://www.17sucai.com/preview/1451656/2020-01-07/%E7%AB%8B%E4%BD%93%E6%97%8B%E8%BD%AC/img/midground.png");
+   /* z-index:1;*/ overflow: hidden;
+    animation: cc 80s linear infinite;
+}
+div#foreground{
+    background: url("https://www.17sucai.com/preview/1451656/2020-01-07/%E7%AB%8B%E4%BD%93%E6%97%8B%E8%BD%AC/img/foreground.png"); overflow: hidden;
+    /* z-index:2; */
+    animation: cc 40s linear infinite;
+}
+
+@keyframes cc {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 1000% 0;
+    }
+}
+
+
+.huabaicss {
+  width: 40vw;
+  height: 40vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+    z-index:-9999;
+    animation: bgscroll 4s infinite linear;
+    -webkit-animation: bgscroll 4s infinite linear;
+}
+
+.common {
+  height: 5vw;
+  max-height: 100%;
+  overflow: auto;
+  width: 2vw;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  background-color: ;
+  border-radius: 0vw 10vw 0vw 10vw;
+  box-shadow: inset 0vw 0vw 0vw .1vw #E645D0, 0vw 0vw 1.5vw 0vw #E645D0;
+    z-index:-9999;
+    animation: bgscroll 4s infinite linear;
+    -webkit-animation: bgscroll 4s infinite linear;
+}
+
+.one {
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 7.5vw;
+    z-index:-9999;
+}
+
+.two {
+  transform: rotate(90deg);
+  left: 5.5vw;
+  right: 0;
+  top: 0;
+  bottom: 5.5vw;
+    z-index:-9999;
+}
+
+.three {
+  transform: rotate(135deg);
+  left: 7.5vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+    z-index:-9999;
+}
+
+.four {
+  transform: rotate(180deg);
+  left: 5.5vw;
+  right: 0;
+  top: 5.5vw;
+  bottom: 0;
+    z-index:-9999;
+}
+
+.five {
+  transform: rotate(225deg);
+  left: 0;
+  right: 0;
+  top: 7.5vw;
+  bottom: 0;
+    z-index:-9999;
+}
+
+.six {
+  transform: rotate(270deg);
+  left: 0;
+  right: 5.5vw;
+  top: 5.5vw;
+  bottom: 0;
+    z-index:-9999;
+}
+
+.seven {
+  transform: rotate(315deg);
+  left: 0;
+  right: 7.5vw;
+  top: 0;
+  bottom: 0;
+    z-index:-9999;
+}
+
+.eight {
+  transform: rotate(360deg);
+  left: 0;
+  right: 5.5vw;
+  top: 0;
+  bottom: 5.5vw;
+    z-index:-9999;
+}
+
+
+
+.progress {
+  width: 12vw;
+  height: .5vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #17E1E6;
+    z-index:-9999;
+}
+
+.one {
+  animation: one 1s ease infinite;
+  -moz-animation: one 1s ease infinite;
+  /* Firefox */
+  -webkit-animation: one 1s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: one 1s ease infinite;
+  /* Opera */
+}
+
+@keyframes one {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.two {
+  animation: two 1s .125s ease infinite;
+  -moz-animation: two 1s .125s ease infinite;
+  /* Firefox */
+  -webkit-animation: two 1s .125s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: two 1s .125s ease infinite;
+  /* Opera */
+}
+
+@keyframes two {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.three {
+  animation: three 1s .25s ease infinite;
+  -moz-animation: three 1s .25s ease infinite;
+  /* Firefox */
+  -webkit-animation: three 1s .25s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: three 1s .25s ease infinite;
+  /* Opera */
+}
+
+@keyframes three {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.four {
+  animation: four 1s .375s ease infinite;
+  -moz-animation: four 1s .375s ease infinite;
+  /* Firefox */
+  -webkit-animation: four 1s .375s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: four 1s .375s ease infinite;
+  /* Opera */
+}
+
+@keyframes four {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.five {
+  animation: five 1s .5s ease infinite;
+  -moz-animation: five 1s .5s ease infinite;
+  /* Firefox */
+  -webkit-animation: five 1s .5s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: five 1s .5s ease infinite;
+  /* Opera */
+}
+
+@keyframes five {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.six {
+  animation: six 1s .625s ease infinite;
+  -moz-animation: six 1s .625s ease infinite;
+  /* Firefox */
+  -webkit-animation: six 1s .625s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: six 1s .625s ease infinite;
+  /* Opera */
+}
+
+@keyframes six {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.seven {
+  animation: seven 1s .750s ease infinite;
+  -moz-animation: seven 1s .750s ease infinite;
+  /* Firefox */
+  -webkit-animation: seven 1s .750s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: seven 1s .750s ease infinite;
+  /* Opera */
+}
+
+@keyframes seven {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.eight {
+  animation: eight 1s .875s ease infinite;
+  -moz-animation: eight 1s .875s ease infinite;
+  /* Firefox */
+  -webkit-animation: eight 1s .875s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: eight 1s .875s ease infinite;
+  /* Opera */
+}
+
+@keyframes eight {
+  0%,
+  100% {}
+  50% {
+    background: ;
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+.huabaicss {
+  animation: huabaicss 5s linear infinite;
+  -moz-animation: huabaicss 5s linear infinite;
+  /* Firefox */
+  -webkit-animation: huabaicss 5s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: huabaicss 5s linear infinite;
+  /* Opera */
+}
+
+@keyframes huabaicss {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.play{
+.player:-webkit-full-screen {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0
+}
+
+.player:-webkit-full-screen .player-danmaku .player-danmaku-bottom.player-danmaku-move,
+.player:-webkit-full-screen .player-danmaku .player-danmaku-top.player-danmaku-move {
+	-webkit-animation: danmaku-center 6s linear;
+	animation: danmaku-center 6s linear;
+	-webkit-animation-play-state: inherit;
+	animation-play-state: inherit
+}
+
+.player:-webkit-full-screen .player-danmaku .player-danmaku-right.player-danmaku-move {
+	-webkit-animation: danmaku 8s linear;
+	animation: danmaku 8s linear;
+	-webkit-animation-play-state: inherit;
+	animation-play-state: inherit
+}
+
+.yzmplayer:-webkit-full-screen {
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0
+}
+
+.yzmplayer:-webkit-full-screen .yzmplayer-danmaku .yzmplayer-danmaku-bottom.yzmplayer-danmaku-move,
+.yzmplayer:-webkit-full-screen .yzmplayer-danmaku .yzmplayer-danmaku-top.yzmplayer-danmaku-move {
+	-webkit-animation: danmaku-center 6s linear;
+	animation: danmaku-center 6s linear;
+	-webkit-animation-play-state: inherit;
+	animation-play-state: inherit
+}
+
+.yzmplayer:-webkit-full-screen .yzmplayer-danmaku .yzmplayer-danmaku-right.yzmplayer-danmaku-move {
+	-webkit-animation: danmaku 8s linear;
+	animation: danmaku 8s linear;
+	-webkit-animation-play-state: inherit;
+	animation-play-state: inherit}
+}
