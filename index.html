@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+<title>主页</title>
+<link rel="stylesheet" type="text/css" href="../css/new_file.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/loding.css">
+<link rel="stylesheet" type="text/css" href="css/commonxd.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+
+</head>
+
+<body class="body">
+<div class="bgimgs"></div>
+<div class="overlaybgs"></div>
+		<!div id="midground" class="wall"></div>
+		<!div id="foreground" class="wall"></div>
+		<div id="baiduloading" style="display: black;">		
+		<div class="huabaicss" id="wraps">
+					<div class="one common"></div>
+					<div class="two common"></div>
+					<div class="three common"></div>
+					<div class="four common"></div>
+					<div class="five common"></div>
+					<div class="six common"></div>
+					<div class="seven common"></div>
+					<div class="eight common"></div>
+			
+		</div>
+		
+		<div class="huabaicss" id="huabaicsss" style="display:none">
+					<div class="one common"></div>
+					<div class="two common"></div>
+					<div class="three common"></div>
+					<div class="four common"></div>
+					<div class="five common"></div>
+					<div class="six common"></div>
+					<div class="seven common"></div>
+					<div class="eight common"></div>
+
+					<div id="huabaicssdata" style="display: none;">							
+		</div>
+		<!--padding-top:90px;-->		
+		<div class="bar" id="bars" style="font-weight:bold;z-index:9999;" align="center">正在加载中,请稍等...<span class="time">7</span>秒</div>
+
+		</div>
+
+<div class="header">
+	<a class="logo" href="index.html"><img src="images/logo.png" /></a>
+	<div class="search">
+		<input type="text" placeholder="输入你想看的" id="search" />
+		<a id="searchDo">全网搜索</a>
+	</div>
+
+	<div class="navigate">
+		<a href="index.html" class="current">精选</a>
+		<a href="list/dianshi.html">电视剧</a>
+		<a href="list/dianying.html">电影</a>
+		<a href="list/zongyi.html">综艺</a>
+		<a href="list/dongman.html">动漫</a>
+		<a href="Musics">Musics</a>		
+	</div>
+</div>
+
+<div class="s-slider">
+	<ul id="bannerList">
+		<div class="template">
+			<li><a href="{{href}}"><img src="{{pic}}" /><span>{{title}}</span></a></li>
+		</div>
+	</ul>
+	<ol></ol>
+</div>
+
+
+
+	<ol style="display: block;">
+		<a class="search-to-top" id="searchToTop"></a>
+	<span class="layui-layer-setwin">
+	        <div id="search-area" class="layui-layer-content"><form onsubmit="return searchSubmit()">
+	<div id="search-area">
+	    <div class="search-group"> 
+	       <input type="text" name="wd" id="search-DO" placeholder="搜索" autofocus="" required="">      
+	  <button class="" type="submit">搜 索</button>  
+	  </div>    <div class="radio-group" id="music-source">   
+    <label><input type="radio" name="searchDo" value="ITV"> ITV</label>	
+	</span>
+	 </div></div></form></div>
+	 </ol>
+
+<div class="loading" id="loadBox">
+	<span class="s-loading"><i class="first"></i><i class="second"></i><i class="third"></i></span>
+</div>
+
+<div id="dataBox" style="display:none">
+
+	<div class="list">
+
+		<h3 class="title">电视剧</h3>
+
+		<div class="items" id="dianshiList">
+			<div class="template">
+				<a href="{{href}}">
+					<i style="background-image:url({{pic}})"><b>{{hint}}</b></i>
+					<span>{{title}}</span>
+				</a>
+			</div>
+			<span class="clear"></span>
+		</div>
+
+		<div class="more">
+			<a href="list/dianshi.html"><img src="images/more_1.png" />更多电视剧</a>
+			<a class="switch-button" data-list-type="dianshi"><img src="images/more_2.png" />换一批</a>
+		</div>
+	</div>
+
+	<div class="clear" style="height:0.8rem"></div>
+
+	<div class="list">
+
+		<h3 class="title">电影</h3>
+
+		<div class="items" id="dianyingList">
+			<div class="template">
+				<a href="{{href}}">
+					<i style="background-image:url({{pic}})"><b>{{hint}}</b></i>
+					<span>{{title}}</span>
+				</a>
+			</div>
+			<span class="clear"></span>
+		</div>
+
+		<div class="more">
+			<a href="list/dianying.html"><img src="images/more_1.png" />更多电影</a>
+			<a class="switch-button" data-list-type="dianying"><img src="images/more_2.png" />换一批</a>
+		</div>
+	</div>
+
+	<div class="clear" style="height:0.8rem"></div>
+
+	<div class="list">
+
+		<h3 class="title">综艺</h3>
+
+		<div class="items" id="zongyiList">
+			<div class="template">
+				<a href="{{href}}">
+					<i style="background-image:url({{pic}})"><b>{{hint}}</b></i>
+					<span>{{title}}</span>
+				</a>
+			</div>
+			<span class="clear"></span>
+		</div>
+
+		<div class="more">
+			<a href="list/zongyi.html"><img src="images/more_1.png" />更多综艺</a>
+			<a class="switch-button" data-list-type="zongyi"><img src="images/more_2.png" />换一批</a>
+		</div>
+	</div>
+
+	<div class="clear" style="height:0.8rem"></div>
+
+	<div class="list">
+
+		<h3 class="title">动漫</h3>
+
+		<div class="items" id="dongmanList">
+			<div class="template">
+				<a href="{{href}}">
+					<i style="background-image:url({{pic}})"><b>{{hint}}</b></i>
+					<span>{{title}}</span>
+				</a>
+			</div>
+			<span class="clear"></span>
+		</div>
+
+		<div class="more">
+			<a href="list/dongman.html"><img src="images/more_1.png" />更多动漫</a>
+			<a class="switch-button" data-list-type="dongman"><img src="images/more_2.png" />换一批</a>
+		</div>
+	</div>
+
+	<div class="clear" style="height:3rem"></div>
+
+	<div class="copyright">
+		<p>本站内容均来自于互联网资源实时抓取</p>
+		<p>本源码仅用做学习交流</p>
+	</div>
+
+</div>
+<div class="tabbar visible-xs">
+		<a href="../index.html" class="item ">
+        <i class="icon iconfont icon-shouye"></i>
+        <p class="text">首页</p>
+    </a>
+	<a href="list/dianying.html" class="item hongbao">
+        <i class="icon iconfont icon-caidanicondianyinghui"></i>
+        <p class="text">影片</p>
+    </a><a href="list/dianshi.html" class="item hongbao">
+        <i class="icon iconfont icon-tv_icon"></i>
+        <p class="text">电视</p>
+    </a><a href="list/dongman.html" class="item hongbao">
+        <i class="icon iconfont icon-liebiaodaohang_dongman"></i>
+        <p class="text">动漫</p>
+    </a><a href="list/zongyi.html" class="item hongbao">
+        <i class="icon iconfont icon-jiemu"></i>
+        <p class="text">综艺</p>
+    </a><a href="../Musics" class="item hongbao">
+        <i class="icon iconfont icon-jiemuu"></i>
+        <p class="text">音乐</p>
+    </a>    
+	</div>
+
+
+ 
+<a class="scroll-to-top" id="scrollToTop"></a>
+
+<script src="https://cdn.wxurl.cn/jquery/2.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+<script src="js/functions.js"></script>
+</body>
+</html>
